@@ -3,7 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ProductService } from '../service/service.component';
+import { ProductService } from '../services/product.service';
 import { Product } from '../models/product.model';
 
 
@@ -63,7 +63,8 @@ import { Product } from '../models/product.model';
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
 
-  constructor(private productService: ProductService) {}
+constructor(private productService: ProductService){}
+
 
   ngOnInit(): void {
     this.loadProducts();

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';  
-import { ProductService } from '../service/service.component';
-import { Product } from '../models/product.model';
+import { Product } from '../../models/product.model';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-product-form',
